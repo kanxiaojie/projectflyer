@@ -29,7 +29,7 @@
 
                 <br>
 
-                @if($signedIn)
+                @if($signedIn)//if(Auth::check())
                     <p class="navbar-txet navbar-right">
                         Hello,{{ $user->name }}
                     </p>

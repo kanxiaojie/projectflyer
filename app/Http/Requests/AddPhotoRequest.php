@@ -28,9 +28,8 @@ class AddPhotoRequest extends Request
      */
     public function rules()
     {
-        error_log('hh');
-//        return [
-//            'photo' => "required|mimes:jpg, jpeg, png, bmp",
-//        ];
+        return [
+            'photo' => 'required|mimes:jpg,jpeg,png,bmp',
+        ];
     }
 }

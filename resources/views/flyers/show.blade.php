@@ -23,7 +23,7 @@
 
 {{--                            {!! link_to('Delete', "/photos/{$photo->id}", 'DELETE') !!}--}}
 {{--                            {!! link_to('Update the photo', "/photos/{$photo->id}", 'PATCH') !!}--}}
-                                {!! linck_to('Delete a user', $user, 'DELETE') !!}}
+                                {!! link_to('Delete', "/photos/{$photo->id}", 'DELETE') !!}
 
                             <a href="/{{ $photo->path }}" data-lity>
                                 <img src="/{{ $photo->thumbnail_path }}" alt="">

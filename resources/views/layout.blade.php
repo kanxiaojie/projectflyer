@@ -29,9 +29,10 @@
 
                 <br>
 
-                @if($signedIn)//if(Auth::check())
+                @if(Auth::check())
+                    {{--@if($signedIn)--}}
                     <p class="navbar-txet navbar-right">
-                        Hello,{{ $user->name }}
+                        Hello,{{ Auth::user()->name }}
                     </p>
                 @endif
             </div><!--/.nav-collapse -->

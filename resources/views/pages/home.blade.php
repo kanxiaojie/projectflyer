@@ -12,7 +12,7 @@
             something more unique by building on or modifying it.
         </p>
 
-        @if($signedIn)
+        @if(Auth::check())
             <a href="/flyers/create" class="btn btn-primary">
                 Create a Flyer
             </a>
